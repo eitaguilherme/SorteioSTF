@@ -63,12 +63,6 @@
         var interval = setInterval(function () {
             $("a").removeClass("active");
             $("a:eq(" + index + ")").toggleClass('active');
-
-            console.log('round ' + round);
-            console.log('rdnTurns ' + rdnTurns);
-            console.log('index ' + index);
-            console.log('rdnChoosen ' + rdnChoosen);
-
             if (round == rdnTurns && index == (rdnChoosen - 1)) {
                 clearInterval(interval);
                 if ($("a:eq(" + index + ")").text() != "Alexandre Moraes") {
